@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RandomPasswordGenarator</title>
+    <title>RandomPasswordGenerator</title>
+    <link rel="stylesheet" href="../RandomPasswordGenerator/style.css">
 </head>
 
 <body>
@@ -27,11 +28,16 @@
         </div>
         <!-- PASSWORD LENGTH  -->
         <div class="password__length">
-            <label for="passwordLength">Password Length<label>
+            <label for="passwordLength"><h3>Password Length</h3><label>
                     <input id="passwordLength" type="range" step="1" min="0" max="20">
         </div>
         <!-- DIFFERENT TYPES OF PASSWORD  -->
         <div class="passwordSettings__options_container">
+            <div class="passwordSettings">
+                <h3>
+                    Password strength
+                </h3>
+            </div>
             <ul>
                 <li>
                     <input id="Lowercase" type="checkbox">

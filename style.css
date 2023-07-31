@@ -1,0 +1,71 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    border: 2px solid grey;
+
+}
+
+.container__heading h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    border-bottom: 3px solid grey;
+    margin-bottom: 2px;
+}
+
+.display__box {
+    width: 100%;
+    height: 45px;
+    position: relative;
+    overflow-x: visible;
+    border: 2px solid grey;
+}
+
+.display__box .copy__icon {
+    position: absolute;
+    top: 22.2px;
+    right: 10px;
+}
+.password__strength{
+    width: 100%;
+    height: 10px;
+}
+
+.password__length label{
+   font-weight: 300;
+}
+.password__length input{
+    width: 100%;
+    color: blue;
+}
+.passwordSettings__options_container{
+    height: 200px;
+}
+.passwordSettings__options_container ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: space-evenly;
+}
+.passwordSettings__options_container ul li{
+    list-style-type: none;
+}
+.Generate__Password input{
+    width: 100%;
+    height: 48px;
+    color: whitesmoke;
+    background-color: blue;
+}
