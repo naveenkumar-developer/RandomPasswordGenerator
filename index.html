@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RandomPasswordGenarator</title>
+</head>
+
+<body>
+
+    <!-- OVERALL CONTAINER  -->
+    <div class="container">
+        <!-- CONTAINER HEADING  -->
+        <div class="container__heading">
+            <h1>Password Genarator</h1>
+        </div>
+        <!-- DISPLAY VALUES  -->
+        <div class="display__box">
+            <span class="copy__icon">
+                +
+            </span>
+        </div>
+        <!-- KNOW PASSWORD STRENGTH  -->
+        <div class="password__strength">
+
+        </div>
+        <!-- PASSWORD LENGTH  -->
+        <div class="password__length">
+            <label for="passwordLength">Password Length<label>
+                    <input id="passwordLength" type="range" step="1" min="0" max="20">
+        </div>
+        <!-- DIFFERENT TYPES OF PASSWORD  -->
+        <div class="passwordSettings__options_container">
+            <ul>
+                <li>
+                    <input id="Lowercase" type="checkbox">
+                    <label for="Lowercase">Lowercase (a-z)</label>
+                </li>
+                <li>
+                    <input id="Uppercase" type="checkbox">
+                    <label for="Uppercase">Uppercase (A-Z)</label>
+                </li>
+                <li>
+                    <input id="Numbers" type="checkbox">
+                    <label for="Numbers">Numbers (0-9)</label>
+                </li>
+                <li>
+                    <input id="Symbols" type="checkbox">
+                    <label for="Symbols">Symbols (!@#$%)</label>
+                </li>
+                <li>
+                    <input id="Exclude Duplicate" type="checkbox">
+                    <label for="Exclude Duplicate">Exclude Duplicate (a-z)</label>
+                </li>
+                <li>
+                    <input id="include spaces" type="checkbox">
+                    <label for="include spaces">include spaces (a-z)</label>
+                </li>
+            </ul>
+        </div>
+
+        <!-- GENERATE THE NEW PASSWORD -->
+        <div class="Generate__Password">
+            <input type="submit" value="GENERATE PASSWORD">
+        </div>
+
+    </div>
+</body>
+
+</html>
