@@ -9,13 +9,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
+
 }
 
 .container {
-    width: 500px;
+    width: 400px;
     height: auto;
     padding: 20px;
     border: 2px solid grey;
+    border-radius: 15px;
+    background-color: whitesmoke;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 }
 
@@ -23,7 +29,7 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 500;
     border-bottom: 3px solid grey;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
 }
 
 .display__box {
@@ -31,41 +37,66 @@ body {
     height: 45px;
     position: relative;
     overflow-x: visible;
-    border: 2px solid grey;
+    margin-bottom: 10px;
+}
+
+.display__box input {
+    width: inherit;
+    height: inherit;
+    font-size: inherit;
+    
 }
 
 .display__box .copy__icon {
     position: absolute;
-    top: 22.2px;
+    top: 50%;
     right: 10px;
-}
-.password__strength{
-    width: 100%;
-    height: 10px;
+    transform: translatey(-50%);
+    color: blue;
+    font-size: 1.5rem;
+    font-weight: 800;
+
 }
 
-.password__length label{
-   font-weight: 300;
+.password__strength {
+    width: 100%;
+    height: 10px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+
 }
-.password__length input{
+
+.password__length label {
+    font-weight: 300;
+}
+
+.password__length input {
     width: 100%;
     color: blue;
+    margin-bottom: 10px;
+
 }
-.passwordSettings__options_container{
+
+.passwordSettings__options_container {
     height: 200px;
 }
-.passwordSettings__options_container ul{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: space-evenly;
+
+.passwordSettings__options_container ul {
+    padding-top: 10px;
+    display: grid;
+    place-content: center;
+    line-height: 1.5rem;
 }
-.passwordSettings__options_container ul li{
+
+.passwordSettings__options_container ul li {
     list-style-type: none;
+    font-size: 1.2rem;
 }
-.Generate__Password input{
+
+.Generate__Password input {
     width: 100%;
     height: 48px;
     color: whitesmoke;
-    background-color: blue;
+    background-color: #8360c3;
+    border-radius: 10px;
 }
