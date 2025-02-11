@@ -1,7 +1,8 @@
 # RANDOM PASSWORD GENERATOR
 
 A Random Password Generator built with HTML, CSS, and JavaScript that allows users to generate secure passwords based on selected criteria. The project includes error handling, a stylish UI, and an intuitive user experience.
-## 📸 PREVIEW 
+## 📸 Preview
+Open the project click [here](https://naveenkumar-developer.github.io/RandomPasswordGenerator/)
 ![WEBSITE-UI](./images/WEBSITE-UI.png)
 ## 🚀 Features
 
