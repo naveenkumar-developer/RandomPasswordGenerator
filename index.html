@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h1>Random Password Generator</h1>
+        <div class="inner_container">
+          <div class="displayAndCopy">
+            <div id="password_display_box" class="password_display_box"></div>
+            <div id="copy_password" class="copy_password">
+              <span class="material-icons">content_copy</span>
+            </div>
+          </div>
+
+          <div class="filters_container">
+            <div class="lengthBox">
+              <label class="label" for="length">Length</label>
+              <input id="length" type="number" class="box" min="8" max="20" />
+            </div>
+            <div class="LowercaseBox">
+              <label class="label" for="lowercase">Lowercase</label>
+              <input id="lowercase" type="checkbox" class="checkbox" />
+            </div>
+            <div class="UppercaseBox">
+              <label class="label" for="uppercase">Uppercase</label>
+              <input id="uppercase" type="checkbox" class="checkbox" />
+            </div>
+            <div class="numberBox">
+              <label class="label" for="number">Numbers</label>
+              <input id="number" type="checkbox" class="checkbox" />
+            </div>
+            <div class="symbolsBox">
+              <label class="label" for="symbols">Symbols</label>
+              <input id="symbols" type="checkbox" class="checkbox" />
+            </div>
+            <div class="buttons">
+              <button id="generateBtn" class="generateBtn">Generate new</button>
+              <button id="regenerateBtn" class="regenerateBtn box">
+                <span class="material-icons"> restart_alt </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="copyErrorModal" class="warningModal">
+        <div class="errorIcon">
+          <span class="material-icons"> error </span>
+        </div>
+        <p id="warningMessage" class="warningMessage">
+          Please generate password first
+        </p>
+        <button type="button" class="closeButton">
+          <span class="material-icons"> close </span>
+        </button>
+      </div>
+      <div id="successModal" class="successModal">
+        <div class="successIcon">
+          <span class="material-icons"> check </span>
+        </div>
+        <p class="successMessage">Text copied successfully</p>
+        <button type="button" class="closeButton">
+          <span class="material-icons"> close </span>
+        </button>
+      </div>
+      <div id="passwordLengthErrorModal" class="passwordLengthErrorModal">
+        <div class="errorIcon">
+          <span class="material-icons"> error </span>
+        </div>
+        <p class="warningMessage">
+          password charecters should be minimum 8 to maximum 20
+        </p>
+        <button type="button" class="closeButton">
+          <span class="material-icons"> close </span>
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
