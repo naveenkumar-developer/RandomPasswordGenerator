@@ -4,7 +4,7 @@ const generate_passwordBtn = document.getElementById("generateBtn");
 const regenerate_passwordBtn = document.getElementById("regenerateBtn");
 const copy_passwordBtn = document.getElementById("copy_password");
 
-//ACCESS ModalS FOR ERROR HANDLING
+//ACCESS Modals FOR ERROR HANDLING
 
 const copyErrorModalBox = document.getElementById("copyErrorModal");
 const passwordLengthErrorModalBox = document.getElementById(
@@ -91,7 +91,7 @@ generate_passwordBtn.addEventListener("click", generatePassword);
 regenerate_passwordBtn.addEventListener("click", generatePassword);
 
 copy_passwordBtn.addEventListener("click", function () {
-  if (displayPassword.innerText === "") {
+  if (displayPassword.innerText === "" || displayPassword.innerText === "Select at least one option.") {
     copyErrorModalBox.classList.remove("hideModal");
     copyErrorModalBox.classList.add("showModal");
     document.body.classList.add("no_interAction");

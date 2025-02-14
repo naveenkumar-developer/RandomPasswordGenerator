@@ -148,6 +148,7 @@
     font-size: var(--font-size);
     font-family: var(--font-family);
     margin-left: 0.625rem;
+    text-shadow: 0.5px 0.5px 0.6px black;
 }
 
 .filters_container input[type="checkbox"] {
